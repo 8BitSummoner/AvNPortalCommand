@@ -1,0 +1,9 @@
+# AvNPortalCommand Configuration File
+# Version 1.0
+
+
+# Defines command to be run by players entering a portal
+Command: "server nether"
+
+# Enables log to console when command is run via this plugin
+EnableLogging: true

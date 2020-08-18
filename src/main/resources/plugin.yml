@@ -1,0 +1,8 @@
+name: AvNPortalCommand
+version: ${project.version}
+main: ca.avalonmc.avnportalcommand.AvNPortalCommand
+api-version: "1.16"
+prefix: AvN Portal
+authors: [8BitSummoner]
+description: Runs a configurable command when a player attempts to go through a Nether portal.
+website: avalonmc.ca
