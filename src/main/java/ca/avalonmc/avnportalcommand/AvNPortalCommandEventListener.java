@@ -1,5 +1,6 @@
 package ca.avalonmc.avnportalcommand;
 
+import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerPortalEvent;
@@ -30,7 +31,7 @@ public class AvNPortalCommandEventListener implements Listener {
 			
 		}
 		
-		if (!e.getPlayer().performCommand(command)) {
+		if (!Bukkit.getServer().dispatchCommand(e.getPlayer(), command)) {
 			
 			log.warning("Command '" + command + "'failed to run for " + e.getPlayer().getName());
 			return;
